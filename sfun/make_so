@@ -1,0 +1,10 @@
+#!/bin/sh
+
+SOVERSION=libKL_DevCtl_1_0.so
+
+gcc -fPIC -c kl_device_ctldata_format_sfun_wrapper.c -o kl_device_ctldata_format_sfun_wrapper.o
+
+ld -o $SOVERSION  kl_device_ctldata_format_sfun_wrapper.o -shared
+\cp $SOVERSION /usr/lib/
+
+rm *.o

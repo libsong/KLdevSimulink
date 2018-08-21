@@ -1,0 +1,14 @@
+﻿生成启动时间为 2018/8/15 12:50:19。
+     1>项目“E:\aaProduct\simulink\DeviceControlDataFormat\sfun\vs\simulink_kldev\kldev_v1\kldev_v1.vcxproj”在节点 2 上(Build 个目标)。
+     1>Build:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\\VisualGDB.exe" /build "E:\aaProduct\simulink\DeviceControlDataFormat\sfun\vs\simulink_kldev\kldev_v1\kldev_v1.vcxproj" "/solution:E:\aaProduct\simulink\DeviceControlDataFormat\sfun\vs\simulink_kldev\simulink_kldev.sln"  "/config:Debug" "/platform:Win32"
+         VisualGDB: Sending 7 updated source files to build machine...
+     1>VisualGDB : warning : tar: Read 7680 bytes from -
+         VisualGDB: Run "make  CONFIG=Debug" in directory "/tmp/VisualGDB/e/aaProduct/simulink/DeviceControlDataFormat/sfun/vs/simulink_kldev/kldev_v1" on root@192.168.2.168 (SSH)
+         gcc -ggdb -ffunction-sections -O0   -DDEBUG=1  -fPIC -c kldev_v1.c -o Debug/kldev_v1.o -MD -MF Debug/kldev_v1.dep
+         g++ -shared -o Debug/libKL_DevCtl_1_0.so -Wl,-gc-sections    -Wl,--start-group Debug/kldev_v1.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,libKL_DevCtl_1_0.so  -Wl,--end-group
+     1>已完成生成项目“E:\aaProduct\simulink\DeviceControlDataFormat\sfun\vs\simulink_kldev\kldev_v1\kldev_v1.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:00.82

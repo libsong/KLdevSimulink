@@ -1,0 +1,22 @@
+﻿生成启动时间为 2018/8/15 13:32:08。
+     1>项目“E:\aaProduct\simulink\DeviceControlDataFormat\sfun\vs\simulink_kldev\kldev_v1\kldev_v1.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>Rebuild:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\\VisualGDB.exe" /rebuild "E:\aaProduct\simulink\DeviceControlDataFormat\sfun\vs\simulink_kldev\kldev_v1\kldev_v1.vcxproj" "/solution:E:\aaProduct\simulink\DeviceControlDataFormat\sfun\vs\simulink_kldev\simulink_kldev.sln"  "/config:Release" "/platform:Win32"
+         VisualGDB: Run "make  CONFIG=Release clean" in directory "/tmp/VisualGDB/e/aaProduct/simulink/DeviceControlDataFormat/sfun/vs/simulink_kldev/kldev_v1" on root@192.168.2.168 (SSH)
+         rm -rf Release
+         VisualGDB: Sending 7 updated source files to build machine...
+     1>VisualGDB : warning : tar: Read 9216 bytes from -
+     1>VisualGDB : warning : You appear to be using an old version of the tar archiver that has common problems. Please switch the SSH connection to file-by-file mode or update your tar.
+     1>EXEC : warning VGDB2002: File transfer errors detected. Try disabling on-the-fly TAR mode for this host in SSH Host Manager.
+     1>VisualGDB : warning : Source file transfer failed. Your build results may end up unexpected.
+         VisualGDB: Run "make  CONFIG=Release" in directory "/tmp/VisualGDB/e/aaProduct/simulink/DeviceControlDataFormat/sfun/vs/simulink_kldev/kldev_v1" on root@192.168.2.168 (SSH)
+         mkdir Release
+         gcc -ggdb -ffunction-sections -O3   -DNDEBUG=1 -DRELEASE=1  -fPIC -c kldev_v1.c -o Release/kldev_v1.o -MD -MF Release/kldev_v1.dep
+         g++ -shared -o Release/libKL_DevCtl_1_0.so -Wl,-gc-sections    -Wl,--start-group Release/kldev_v1.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,libKL_DevCtl_1_0.so  -Wl,--end-group
+         VisualGDB: Executing post-build actions
+         VisualGDB: Copy file /tmp/VisualGDB/e/aaProduct/simulink/DeviceControlDataFormat/sfun/vs/simulink_kldev/kldev_v1/Release/libKL_DevCtl_1_0.so on 192.168.2.168 to E:\aaProduct\simulink\DeviceControlDataFormat\sfun\libKL_DevCtl_1_0.so on local computer
+     1>已完成生成项目“E:\aaProduct\simulink\DeviceControlDataFormat\sfun\vs\simulink_kldev\kldev_v1\kldev_v1.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:01.40
